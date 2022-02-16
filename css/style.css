@@ -1,0 +1,199 @@
+/* Обнуление */
+@import "null.css";
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+	background-color: #fef9df;
+}
+.wrapper {
+	font-family: 'Bebas Neue', sans-serif;
+   text-align: center;
+	max-width: 1300px;
+	margin: 20px auto;
+}
+.title {
+   font-size: 77px;
+	margin: 0px 0px 30px 0px;
+	border-radius: 15px;
+	background-color: #f692c4;
+	border: 3px solid #000;
+	color: #41132a;
+	box-shadow: 10px 10px 10px #000;
+}
+/* Свойство background color */
+h2 {
+	box-shadow: 10px 10px 10px #000;
+	background-color: #d8ab9e;
+	font-size: 64px;
+	color: #612d1f;
+	margin: 0px 0px 30px 0px;
+	border-radius: 15px;
+	border: 3px solid #000;
+}
+nav li {
+	box-shadow: 10px 10px 10px #000;
+	margin: 0px 0px 30px 0px; 
+	font-size: 44px;
+	border-radius: 15px;
+	background-color: #0c5679;
+	color: #eef5ff;
+	border: 3px solid #000;
+}
+main li {
+	box-shadow: 10px 10px 10px #000;
+	margin: 0px 0px 30px 0px; 
+	font-size: 44px;
+	border-radius: 15px;
+	background-color: #4d668b;
+	color: #eef5ff;
+	border: 3px solid #000;
+}
+.transparent {
+	background-color: transparent;
+	border: 3px solid #000;
+	color:#4d668b;
+}
+.rgb {
+	background-color: rgb(120, 122, 145);
+}
+.rgba {
+	background-color: rgba(120, 122, 145, 0.5);
+}
+/* ===================================== */
+/* Свойство background image */
+.icon {
+	background-image: url("../img/cassette.png");
+	min-height: 135px;
+}
+.linear {
+	background: linear-gradient(to right, #94525c, #14aad7);
+	min-height: 160px;
+}
+.radial {
+	background: radial-gradient(circle, #5d1a78, #414b50);
+	min-height: 160px;
+}
+/* ====================================== */
+/* Свойство background-repeat */
+.repeat {
+	background: #4d668b url("../img/cassette.png") repeat;
+	min-height: 135px;
+}
+.norepeat {
+	background: #4d668b url("../img/cassette.png") no-repeat;
+	min-height: 135px;
+}
+.repeat-x {
+	background: #4d668b url("../img/cassette.png") repeat-x;
+	min-height: 270px;
+}
+.repeat-y {
+	background: #4d668b url("../img/cassette.png") repeat-y;
+	min-height: 270px;
+}
+.space {
+	background: #4d668b url("../img/cassette.png") space;
+	min-height: 270px;
+}
+.round {
+	background: #4d668b url("../img/cassette.png") round;
+	min-height: 270px;
+}
+/* ========================================================== */
+/* Свойство background-position */
+.default {
+	background: #c8d5df url("../img/cassette.png") 0 0 no-repeat;
+	min-height: 270px;
+}
+.center {
+	background: #c8d5df url("../img/cassette.png") 50% no-repeat;
+	min-height: 270px;
+}
+.left {
+	background: #c8d5df url("../img/cassette.png") 0 50% no-repeat;
+	min-height: 270px;
+}
+.corner {
+	background: #c8d5df url("../img/cassette.png") 100% 100% no-repeat;
+	min-height: 270px;
+}
+.position {
+	background: #c8d5df url("../img/cassette.png") 30% 10% no-repeat;
+	min-height: 270px;
+}
+/* ========================================================== */
+/* Свойство Background-attachment */
+.def {
+	background: url("../img/01.jpg") 0 0 no-repeat scroll;
+	min-height: 270px;
+}
+.fixed {
+	background: url("../img/01.jpg") 0 0 no-repeat fixed;
+	min-height: 270px;
+}
+.local {
+	background: url("../img/01.jpg") 0 0 no-repeat local;
+	max-height: 270px;
+	overflow: scroll;
+}
+/* ================================================== */
+/* Свойство Background-size */
+.det {
+	background:#ab8ee5 url("../img/03.png") 0 0/auto auto no-repeat;
+	min-height: 270px;
+}
+.width {
+	background:#ab8ee5 url("../img/03.png") 0 0/100% auto no-repeat;
+	min-height: 405px;
+}
+.height {
+	background:#ab8ee5 url("../img/02.png") 0 0/auto 100% no-repeat;
+	min-height: 270px;
+}
+.strech {
+	background:#ab8ee5 url("../img/03.png") 0 0/100% 100% no-repeat;
+	min-height: 405px;
+}
+.contain {
+	background:#ab8ee5 url("../img/03.png") 0 0/contain no-repeat;
+	min-height: 405px;
+}
+.cover {
+	background:#ab8ee5 url("../img/03.png") 0 0/cover no-repeat;
+	min-height: 405px;
+}
+.size {
+	background: #ab8ee5 url("../img/03.png") 0 0/60px 60px no-repeat;
+	min-height: 135px;
+}
+/* ================================================== */
+/* Установка нескольких фоновых изображений для блока */
+.two {
+	background: url('../img/cassette.png') left no-repeat, url('../img/01.jpg') 50%/cover no-repeat;
+	min-height: 405px;
+}
+.three {
+	background: url('../img/cassette.png') right/50px no-repeat, url('../img/02.png') left/60px 60px no-repeat, url('../img/01.jpg') 50%/cover no-repeat;
+	min-height: 405px;
+}
+.four {
+	background: url("../img/cassette.png") center/60px no-repeat ,url('../img/cassette.png') right/50px no-repeat, url('../img/02.png') left/60px 60px no-repeat, url('../img/01.jpg') 50%/cover no-repeat;
+	min-height: 405px;
+}
+/* footer */
+.top {
+	display: inline-block;
+	font-size: 30px;
+	margin: 0px 0px 20px 0px;
+	background:#0c5679;
+	padding: 20px 30px;
+	box-shadow:3px 5px 5px 3px black ;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	-ms-border-radius:20px;
+	-o-border-radius:20px;
+}
+.name {
+	font-size: 18px;
+}
